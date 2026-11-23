@@ -1,6 +1,6 @@
 [submodule "tv"]
 	path = tv
-	url = https://github.com/Wisdurm/infotvclient.git
+	url = git@github.com:/Wisdurm/infotvclient.git
 [submodule "reader"]
 	path = reader
-	url = https://github.com/LukaHietala/mfrc522-periph.git
+	url = git@github.com:/LukaHietala/mfrc522-periph.git
