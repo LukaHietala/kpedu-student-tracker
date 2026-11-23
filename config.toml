@@ -1,0 +1,10 @@
+server_address = ""
+
+[reader]
+# Device secret key
+secret_key = ""
+
+[tv]
+# Group which to show on the tv
+group_filter =
+```
