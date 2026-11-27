@@ -1,0 +1,18 @@
+[Unit]
+Description=Student tracker info tv
+After=multi-user.target
+#StartLimitAction=reboot
+
+[Service]
+Restart=always
+RestartSec=1
+
+Type=simple
+User=kpedu
+Environment=DISPLAY=:0
+# VAIHDA NÄMÄ TARPEEN MUKAAN
+WorkingDirectory=/home/kpedu/tv/
+ExecStart=/home/kpedu/tv/build/infotvclient
+
+[Install]
+WantedBy=multi-user.target

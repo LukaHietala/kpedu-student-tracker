@@ -1,0 +1,17 @@
+[Unit]
+Description=Student tracker reader
+After=multi-user.target
+#StartLimitAction=reboot
+
+[Service]
+Restart=always
+RestartSec=1
+
+Type=simple
+User=kpedu
+# VAIHDA NÄMÄ TARPEEN MUKAAN
+WorkingDirectory=/home/kpedu/reader
+ExecStart=/home/kpedu/reader/mfrc522
+
+[Install]
+WantedBy=multi-user.target
